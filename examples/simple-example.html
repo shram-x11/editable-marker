@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet.editableMarker simple example</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
+</head>
+<body style="overflow: hidden;padding: 0;margin: 0;">
+	<div id="map" style="width: 100vw; height: 100vh"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+	<script src="../src/leaflet.editableMarker.js"></script>
+	<script>
+
+		var map = L.map('map').setView([45.801104, 4.775398], 13);
+		var icon = L.icon({
+			iconUrl: 'bird.svg',
+			iconSize: [35, 53],
+			iconAnchor: [29, 51]
+		});
+
+		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: 'Map data � <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		L.editableMarker([45.801104, 4.775398], {
+		    icon: icon,
+			draggable: true,
+        	angle: 45,
+			percent: 150
+		}).addTo(map).activateTransformation();
+
+	</script>
+</body>
+</html>

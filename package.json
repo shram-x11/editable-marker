@@ -1,0 +1,62 @@
+{
+  "_from": "leaflet-editable-marker",
+  "_id": "leaflet-editable-marker@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha1-mOzcpIU/AJpSeEYnwmOHPGFmhfg=",
+  "_location": "/leaflet-editable-marker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "leaflet-editable-marker",
+    "name": "leaflet-editable-marker",
+    "escapedName": "leaflet-editable-marker",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/leaflet-editable-marker/-/leaflet-editable-marker-0.1.6.tgz",
+  "_shasum": "98ecdca4853f009a52784627c263873c616685f8",
+  "_spec": "leaflet-editable-marker",
+  "_where": "D:\\server\\OSPanel\\domains\\shram\\maps-designer",
+  "author": {
+    "name": "Yaroslav Dobzhanskij"
+  },
+  "bugs": {
+    "url": "https://github.com/yarsky-tgz/leaflet.editableMarker/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "leaflet": "^0.7.7"
+  },
+  "deprecated": false,
+  "description": "Interactive editing of marker (rotate, resize)",
+  "devDependencies": {
+    "uglify-js": "^3.1.4"
+  },
+  "homepage": "https://github.com/yarsky-tgz/leaflet.editableMarker#readme",
+  "keywords": [
+    "leaflet",
+    "marker",
+    "map",
+    "interactive",
+    "editable",
+    "rotate",
+    "resize"
+  ],
+  "license": "ISC",
+  "main": "src/leaflet.editableMarker.js",
+  "name": "leaflet-editable-marker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarsky-tgz/leaflet.editableMarker.git"
+  },
+  "scripts": {
+    "build": "uglifyjs src/leaflet.editableMarker.js"
+  },
+  "version": "0.1.6"
+}
